@@ -1,0 +1,84 @@
+.form{
+  position: fixed;
+  top: 100px;
+  z-index: 6;
+  left: 34%;
+  width: 32%;
+  height: 550px;
+  background-color: rgba(255, 255, 255, 0.93);
+  display: none;
+  flex-direction: column;
+  border-radius: 30px;
+  backdrop-filter: blur(5px);
+  transition: 0.7s;
+  form{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin: auto;
+    margin-top: 50px;
+    align-items: center;
+    h2{
+      font-family: Roboto-Regular;
+      font-size: 25px;
+      text-align: center;
+      margin: 0;
+    }
+    input{
+      border: 0;
+      margin-top: 40px;
+      height: 30px;
+      background-color: rgb(20, 23, 30);
+      padding: 10px 10px 10px 20px;
+      color: white;
+      font-family: Roboto-Regular;
+      font-size: 14px;
+      width: 90%;
+      transition: 0.3s;
+      &:focus{
+        width: 95%;
+      }
+    }
+    #submit{
+      height: 50px;
+      width: 60%;
+      margin: auto;
+      margin-top: 50px;
+      padding: 0;
+      text-align: center;
+      background: white;
+      border: 1px solid rgb(20, 23, 30);
+      color: rgb(20, 23, 30);
+      transition: 0.3s;
+      &:hover{
+        background: rgb(20, 23, 30);
+        color: white;
+        width: 70%;
+      }
+    }
+  }
+}
+.form-background{
+  width: 100%;
+  height: 900px;
+  background-color: rgba(0, 0, 0, 0.37);
+  z-index: 4;
+  position: absolute;
+  backdrop-filter: blur(5px);
+  display: none;
+  transition: 0.7s;
+}
+body{
+  overflow-y: auto;
+}
+@media (max-width: 860px) {
+  .form{
+    width: 43%;
+  }
+}
+@media (max-width: 520px) {
+  .form{
+    width: 70%;
+    left: 20%;
+  }
+}

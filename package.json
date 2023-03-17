@@ -1,0 +1,15 @@
+{
+  "name": "professional-interior-design",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Dmitry",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.59.3",
+    "scss": "^0.2.4"
+  }
+}
